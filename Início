@@ -7,6 +7,9 @@
   </head>
   <body>
     <h1>Título</h1>
-    <button>Adicionar</button>
+
+    <section>
+      <button>Adicionar</button>
+    </section>
   </body>
 </html>

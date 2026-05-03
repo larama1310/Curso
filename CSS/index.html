@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <!-- 2) Internal css -->
+    <style>
+      p {
+        color: crimson;
+        font-size: 12px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lists.css" />
+  </head>
+  <body>
+    <!-- 1) Inline css (tipo tailwind) -->
+    <h1 style="color: blue">Mudar cor com o Inline</h1>
+    <h2 style="color: blueviolet">Outro título</h2>
+
+    <!--1.1) Múltiplas regras -->
+    <h1
+      style="color: chartreuse; font-size: 50px; border-bottom: 10px solid red"
+    >
+      Mudar cor e tamanho da fonte
+    </h1>
+
+    <!-- 2) Internal css (usar regras para várias tags) -->
+    <p>Eu fui estlizado pelo internal</p>
+    <p>Segundo internal</p>
+
+    <!-- 3) External css (arquivo só de css) -->
+    <h3>Meu título cinza</h3>
+
+    <!-- 4)  Ordem do css => Inline > Internal = External (ganha o que vem depois)-->
+
+    <!-- 5) Múltiplos css -->
+    <ul>
+      <li>Banana</li>
+      <li>Maçã</li>
+      <li>Abacate</li>
+    </ul>
+
+    <!-- 6) Classes modifica  todos os elementos com a mesma classe-->
+    <p class="paragraph">Algum texto</p>
+    <p class="paragraph">Kingnaldo</p>
+    <p class="paragraph">Tapia</p>
+
+    <!-- 7) Id -->
+    <h1 id="exclusive-title">Título com id</h1>
+    <!-- id > class > tag-->
+
+    <!-- 8) Múltiplas regras, ordem do css -->
+    <h2 id="algum-titulo">Algum texto 1</h2>
+    <h2 class="titulo">Algum texto 2</h2>
+    <h2>Algum texto 3</h2>
+
+    <!-- 9) Nome de cor -->
+    <p class="colorname">Qualquer texto para nome de cores</p>
+
+    <!-- 10) Cores hexadecimais -->
+    <p class="hex">Parágrafo com hex</p>
+    <p class="hex2">Outro parágrafo com hex</p>
+
+    <!-- 11) RGB -->
+    <p class="rgb">Este foi estilizado com rgb</p>
+    <p class="rgbmixed">Este foi estilizado com rgb 2</p>
+    <!-- 11.1) RGBA-->
+    <p class="rgba">Este foi utilizado com rgba</p>
+  </body>
+</html>

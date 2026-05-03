@@ -1,0 +1,67 @@
+body {
+  padding-bottom: 500px;
+  background-color: peachpuff;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  margin: 30px;
+}
+/* Comentário no css, CTRL : */
+
+.paragraph {
+  background: #000;
+  color: aqua;
+  padding: 5px;
+  /* .class para classes */
+}
+
+/* #id para ids */
+#exclusive-title {
+  background-color: purple;
+  color: yellow;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* 8) ordem das regras */
+h2 {
+  border-bottom: 2px solid red;
+}
+
+.titulo {
+  border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+  border-bottom: 4px solid green;
+}
+
+/* nome de cores */
+.colorname {
+  color: crimson;
+}
+
+.hex {
+  color: #55a398;
+}
+
+.hex2 {
+  color: #0b053b;
+  font-size: 15px;
+  /* caracteres repetidos podem ser escritos uma só vez. ex: aabbcc = abc */
+}
+
+.rgb {
+  color: rgb(255, 0, 0);
+}
+
+.rgbmixed {
+  color: rgb(123, 98, 12);
+}
+/* RGBA */
+.rgba {
+  color: rgba(234, 76, 4, 0.8);
+}

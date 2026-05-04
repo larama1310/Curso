@@ -65,3 +65,50 @@ h2 {
 .rgba {
   color: rgba(234, 76, 4, 0.8);
 }
+
+/* hsl */
+.hsl {
+  color: hsl(230, 90%, 76%);
+}
+
+.bg {
+  background-color: #000;
+  color: yellow;
+}
+
+/* backgorund */
+.bg2 {
+  background-color: #55a398;
+  color: #0b053b;
+}
+
+/* bg opacity */
+.bgopacity {
+  background-color: green;
+  opacity: 0.4;
+}
+
+/* rgba m opacidade */
+.rgbaopacity {
+  background-color: rgba(90, 120, 20, 0.3);
+  color: #000;
+}
+
+/* bg image */
+.bgimage {
+  background-image: url(../Pasta\ de\ aprendizado/images.jpg);
+  color: #fff;
+}
+
+/* centralizando bg image */
+.notcenteredbg,
+.centeredbg {
+  height: 200px;
+  width: 300px;
+  background-image: url(../Pasta\ de\ aprendizado/images.jpg);
+}
+
+.centeredbg {
+  background-position: center;
+  background-size: cover;
+}

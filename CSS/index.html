@@ -94,5 +94,48 @@
 
     <!-- 15) Box model-->
     <!-- Altura e largura, padding, border e margin -->
+    <!-- 15.1) Height and width -->
+    <div class="height-width"></div>
+    <div class="height-width-2"></div>
+
+    <!-- 15.2) Padding (distância entre conteúdo e borda do elemento)-->
+    <div class="sempadding">Este não tem padding</div>
+    <div class="compadding">Este tem padding</div>
+    <!-- 15.2.1) Padding e lados individuais -->
+    <p class="padding-individual">Este elemento tem paddings diferentes</p>
+    <!-- 15.2.2) Shorthand properties (padding a todas as direções com apenas uma regra) -->
+    <!-- Ordem: top, right, bottom, left -->
+    <!-- Pode ser aplicado para outras propriedades, como a margin -->
+    <p class="shorthand-padding">Texto 1 shorthand</p>
+    <p class="shorthand-padding-2">Texto 2 shorthand</p>
+    <!-- 15.2.3) Padding com width -->
+    <!-- Border-box faz enquadrar direitinho width com padding -->
+    <div class="semborderbox">
+      <p>Algum conteúdo</p>
+    </div>
+    <div class="comborderbox">
+      <p>Outro conteúdo</p>
+    </div>
+
+    <!-- 15.3) Border (entre padding e margin) -->
+    <div class="border">Borda</div>
+    <div class="border-2">Borda 2</div>
+    <!-- 15.3.1) Borda individual -->
+    <p class="border-left">Borda na esquerda</p>
+    <p class="border-bottom">Borda embaixo</p>
+    <!-- 15.3.2) Border-radius (borda arredondada) -->
+    <div class="rounded-p">Eu estou arredondado</div>
+    <div class="rounded-p-2">Eu estou arredondado 2</div>
+
+    <!-- 15.4) Margin (espaçamento externo) -->
+    <!-- Aplicações similares ao padding -->
+    <div class="margin">Eu tenho margem</div>
+    <div class="margin-top">Eu tenho margem no topo</div>
+    <div class="margin-shorthand">Eu tenho margem utilizando shorthand</div>
+
+    <!-- 15.5) Juntando tudo-->
+    <div class="box-model">
+      <p>Tenho todas as propriedades do box-model</p>
+    </div>
   </body>
 </html>

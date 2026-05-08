@@ -237,3 +237,84 @@ h2 {
   width: 200px;
   height: 100px;
 }
+
+/* text align */
+.text-alignment {
+  text-align: right;
+}
+
+.container-center {
+  text-align: center;
+  width: 300px;
+  border: 1px solid red;
+}
+
+/* text decoration */
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.remove-underline {
+  text-decoration: none;
+  color: red;
+}
+
+/* text transform */
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+/* letter spacing */
+.spacing {
+  letter-spacing: 3px;
+}
+
+/* fontes */
+.serif {
+  font-family: Georgia;
+}
+.sans-serif {
+  font-family: Helvetica;
+}
+.monospace {
+  font-style: Courier New;
+}
+.cursive {
+  font-family: cursive;
+}
+.fantasy {
+  font-family: fantasy;
+}
+
+/* font style */
+.italic {
+  font-style: italic;
+}
+.oblique {
+  font-style: oblique;
+}
+
+/* font weight */
+.thin,
+.bold,
+.bolder {
+  font-family: Helvetica;
+}
+
+.thin {
+  font-weight: 100;
+}
+.bold {
+  font-weight: 600;
+}
+.bolder {
+  font-weight: 900;
+}

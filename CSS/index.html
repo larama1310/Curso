@@ -173,5 +173,62 @@
     <p class="thin">Sou mais fino</p>
     <p class="bold">Eu estou em bold</p>
     <p class="bolder">Estou em bolder</p>
+
+    <!-- 23) Font size -->
+    <h4 class="small">Título pequeno</h4>
+    <h4 class="big">Título grande</h4>
+
+    <!-- 24) Display -->
+    <div class="inline-box">a</div>
+    <div class="inline-box">b</div>
+    <div class="inline-box">c</div>
+
+    <span class="block">d</span>
+    <span class="block">e</span>
+
+    <!-- 25) Escondendo elementos -->
+    <p class="invisible">me encontre se puder</p>
+    <!-- display: none -->
+
+    <!-- 26) Posições dos elementos -->
+    <!-- 26.1) Static (valor padrão) - não afetado por regras -->
+    <div class="static">
+      <span>eu sou estático</span>
+    </div>
+    <!-- 26.2)  Relative (pouco usual) -->
+    <div class="relative">
+      <span>Eu sou relativo</span>
+    </div>
+    <p>Eu sou um parágrafo</p>
+    <!-- repare que ele pode invadir espaço de outros elementos => problema -->
+
+    <!-- 26.3) Absolute (movido pela tela inteira) => quebra o fluxo html-->
+    <div class="absolute">
+      <span>Eu sou absoluto</span>
+    </div>
+    <p>Eu sou um parágrafo</p>
+
+    <!-- 26.4) Relative com absolute -->
+    <div class="relative-container">
+      <div class="absolute-1"></div>
+      <div class="absolute-2"></div>
+    </div>
+
+    <!-- 26.5) Fixed -->
+    <div class="fixed">
+      <span>Estou fixo</span>
+    </div>
+
+    <!-- 26.6) Sticky (fixed + relative) => fica no lugar e navega pela tela-->
+    <div class="sticky">
+      <span>Sticky</span>
+    </div>
+
+    <!-- 27) Z-index -->
+    <div class="relative-container">
+      <div class="absolute-3"></div>
+      <div class="absolute-4"></div>
+      <div class="absolute-5"></div>
+    </div>
   </body>
 </html>

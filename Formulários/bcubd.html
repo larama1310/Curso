@@ -8,11 +8,100 @@
 </head>
 <body>
   <h2>Formulários HTML</h2>
-  <form>
+  <!-- 1) Primeiro fomrulário -->
+   <!-- 2) Atributos do formulário -->
+  <form action="" method="">
+    <!-- action é para onde os dados do form serão enviados -->
+     <!-- method: get ou post -->
     <div>
     <label>Nome: </label>
     <input type="text">
   </div>
+  <!-- 3) atributo name -->
+   <div>
+    <!-- 4) atributo label -->
+    <label for="age">Idade: </label>
+    <input type="text" name="age">
+   </div>
+   <!-- 6) select -->
+<div>
+  <label for="job">Selecione a sua profissão</label>
+  <select name="job">
+    <option value="programador">Programador</option>
+    <option value="engenheiro">Engenheiro</option>
+    <option value="vendedor">Vendedor</option>
+  </select>
+</div>
+<!-- Há tbm o selected, que já pré seleciona uma opção mais provável (adiciona na option)-->
+ <!-- Para múltiplas opções, há a tag multiple, que adionada no select, não na option -->
+
+ <!-- 7) Textarea -->
+  <!-- tag que cria área de texto -->
+   <div>
+    <label for="comment">Comentário</label>
+    <textarea name="comment"></textarea>
+    <!-- esitlizada com css -->
+   </div>
+
+<!-- 8) fieldset e legend -->
+    <div>
+      <fieldset>
+        <legend>Preencha suas informações</legend>
+        <label for="firstname">Nome:</label>
+        <input type="text" name="firstname">
+        <label for="lastname">Sobrenome:</label>
+        <input type="text" name="lastname">
+      </fieldset>
+    </div>
+   
+<!-- 9) Datalist -->
+ <!-- semelhante ao select, mas dá pra escrever além de escolher -->
+
+ <!-- 10) Senha -->
+  <div>
+    <label for="password">Senha:</label>
+    <input type="password" name="password">
+  </div>
+<!-- mascara o que está sendo digitado -->
+
+<!-- 11) resetar form -->
+ <input type="reset" value="Limpar">
+ <!-- limpa tudo -->
+
+ <!-- 12) input radio (bolinhas)-->
+  <!-- semelhante ao select, mas mostra todas as opções ao mesmo tempo -->
+   <!-- colocar inline block no css -->
+
+   <!-- 13) input checkbox -->
+    <!-- igual ao radio, mas pode escolher mais de uma e desselecionar -->
+     <!-- colocar colchetes, como se fosse um array -->
+
+     <!-- 14) input data -->
+      <!-- pode colocar data -->
+
+      <!-- 15) arquivos -->
+       <!-- permite colcar arquivos -->
+
+       <!-- 16) input number -->
+        <!-- apenas dígitos => menos usual que o text, mas válido -->
+
+  <!-- 17) input email -->
+   <!-- faz verificação automática de email, como presença de @ -->
+
+   <!-- 18) atributo value (não confundir com  o outro value) -->
+    <!-- já deixa o input pré-preenchido para facilitar, por exemplo -->
+
+  <!-- 19) disabled => bloqueia um input -->
+
+  <!-- 20) placeholder -->
+   <!-- dica para o usuário dentro do input, como se fosse o label => MUITO usado -->
+    <div>
+      <label for="currentjob">Profissão:</label>
+      <input type="text" name="currentjob" placeholder="Com que você trabalha?">
+    </div>
+
+    <!-- 5) envio de form -->
+    <input type="submit" value="Enviar">
   </form>
 </body>
 </html>

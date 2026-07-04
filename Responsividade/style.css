@@ -1,0 +1,36 @@
+/* 2) media query */
+h1{
+    color: red;
+}
+
+@media screen and (max-width: 500px){
+   h1{
+    color: blue;
+   } 
+}
+/* observe que a cor do título muda de acordo com a mudança de largura da tela */
+
+/* 3) min-width */
+p{
+    background-color: purple;
+    color: #000;
+}
+
+@media screen and (min-width: 800px){
+    p{
+        background-color: #789;
+        color: coral;
+    }
+}
+    
+/* 4) landscape */
+h3{
+    display: none;
+}
+
+@media screen and (orientation: landscape) {
+    h3{
+        display: block;
+    }
+    
+}

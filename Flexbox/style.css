@@ -1,0 +1,135 @@
+body{
+    padding-bottom: 500px;
+}
+
+/* 1) flex */
+
+
+.flex{
+    display: flex;
+    background-color: #aaa;
+}
+
+/* 2) flex column */
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* 3) wwrap */
+.wrap{
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
+/* 4) justify content */
+.center{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.center .box{
+    width: 50px;
+}
+
+.center{
+    justify-content: center;
+}
+
+/* 5) align items */
+.align-center{
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.align-center .box{
+    width: 50px;
+}
+
+.align-center{
+    align-items: center;
+    justify-content: center;
+}
+
+/* 6) gap */
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 10px;
+}
+
+.gap .box{
+    width: 32%;
+}
+
+/* 7) order */
+.order{
+    display: flex;
+}
+#one{
+    order: 1;
+}
+#two{
+    order: 2;
+}
+#three{
+    order: 3;
+}
+
+
+/* 8) grow */
+.grow{
+    display: flex;
+}
+
+.grow .box{
+    flex: 1;
+}
+
+.grow .boxbig{
+    flex: 2;
+}
+
+/* 9) basis */
+
+.basis{
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis .boxbig{
+    flex-grow: 1;
+}
+
+/* 10) shrink */
+.shrink{
+    display: flex;
+}
+
+.shrink .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .boxsmall{
+    flex-shrink: 2;
+}

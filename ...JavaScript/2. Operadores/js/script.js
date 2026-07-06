@@ -63,3 +63,8 @@ console.log(! ("Rafael" === 1))
 
 // 11) empty values
 console.log(typeof null, typeof undefined)
+
+// 12) mudança de tipos
+console.log(5 * null)
+console.log("teste" * "opa")
+console.log("10" + 1)

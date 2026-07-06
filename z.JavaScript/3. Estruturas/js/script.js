@@ -173,6 +173,6 @@ switch(job){
         console.log("Você é um engenheiro")
         break
     default:
-        console.log("Profissão nõa encontrada")
+        console.log("Profissão não encontrada")
 }
 // sempre colocar o break

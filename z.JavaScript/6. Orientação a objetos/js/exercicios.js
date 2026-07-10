@@ -86,19 +86,60 @@ class Aluno {
 }
 
 // ------------------------------------------------------------
-class Produto {
-    constructor(preco) {
-        this.preco = preco
-    }
+// class Produto {
+//     constructor(preco) {
+//         this.preco = preco
+//     }
     
-    get exibirPreco() {
-        console.log("Preço: R$100,00")
-    }
+//     get exibirPreco() {
+//         console.log("Preço: R$100,00")
+//     }
 
-    set precoValido(preco) {
-        if (preco < 0) {
-            console.log("Valor inválido")
-            return false
-        }
+//     set precoValido(preco) {
+//         if (preco < 0) {
+//             console.log("Valor inválido")
+//             return false
+//         }
+//     }
+// }
+// errado! XXXXXXX
+
+// ------------------------------------------------------------
+// class Animal {
+//     comer() {
+//         return true
+//     }
+// }
+
+// class Gato extends Animal {
+//     constructor() {
+//         comer()
+//     }
+// }
+class Animal {
+    comer() {
+        console.log("Comendo...")
     }
 }
+
+class Gato extends Animal {}
+
+const gato = new Gato()
+
+gato.comer()
+
+// ------------------------------------------------------------
+class Funcionario {
+    constructor(nome, cargo) {
+        this.nome = nome
+        this.cargo = cargo
+    }
+}
+
+class Gerente extends Funcionario {}
+
+const gerente = new Gerente("Chat", "Gerente")
+
+gerente instanceof Gerente
+gerente instanceof Funcionario
+// gerente tem como protótipo Gerente, que por sua vez, tem como protótipo Funcionario

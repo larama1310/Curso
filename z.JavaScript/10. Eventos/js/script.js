@@ -87,3 +87,43 @@ document.addEventListener("mousemove", (e) => {
     console.log(`No eixo x: ${e.x}`)
     console.log(`No eixo y: ${e.y}`)
 })
+
+// 9) evento de scroll
+window.addEventListener("scroll", (e) => {
+    if(window.pageYOffset > 200) {
+        console.log("passamos de 200px")
+    }
+})
+
+// 10) evento de focus/blur
+const input = document.querySelector("myinput")
+
+input.addEventListener("focus", (e) => {
+    console.log("Entrou no input")
+})
+
+input.addEventListener("blur", (e) => {
+    console.log("Saiu do input")
+})
+
+// 11) carregamento de página => pouco usado
+
+
+// 12) debounce
+const debounce = (f, delay) => {
+    let timeout
+
+    return (...arguments) => {
+        if(timeout) {
+            clearTimeout(timeout)
+        }
+
+        timeout = setTimeout(() => {
+            f.apply(arguments)
+    }, delay)
+    }
+}
+
+window.addEventListener("mousemove", debounce(() => {
+    console.log("Executando a cada 400ms")
+}, 400))

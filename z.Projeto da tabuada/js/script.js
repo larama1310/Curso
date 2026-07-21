@@ -10,7 +10,7 @@ const multiplicationTable = document.querySelector("#operations")
 const createTable = (number, multiplicatorNumber) => {
     multiplicationTable.innerHTML = ""
 
-    for(i = 1; i <= multiplicatorNumber; i++) {
+    for(let i = 1; i <= multiplicatorNumber; i++) {
         const result  = number * i
 
         const template = `<div class="row">
@@ -20,7 +20,7 @@ const createTable = (number, multiplicatorNumber) => {
 
         const parser = new DOMParser()
         const htmlTemplate = parser.parseFromString(template, "text/html")
-        const row = htmlTemplate.querySelector("row")
+        const row = htmlTemplate.querySelector(".row")
 
         multiplicationTable.appendChild(row)
     }
@@ -36,4 +36,6 @@ multiplicationForm.addEventListener("submit", (e) => {
     const multiplicatorNumber = +multiplicationInput.value
 
     if(!multiplicationNumber || !multiplicatorNumber) return
+
+    createTable(multiplicationNumber, multiplicatorNumber)
 })

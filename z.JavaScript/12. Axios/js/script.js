@@ -6,7 +6,14 @@ const getData = async () => {
 
     try {
         
-        const response = await axios.get("https://jsonplaceholder.typicode.com/users")
+        const response = await postFetch.get("/users", 
+            // 4) definindo headers
+            {
+                headers: {
+                    "Content-Type": "applications/json",
+                    custom: "header",
+                }
+        })
 
         console.log(response)
 
@@ -36,13 +43,37 @@ const printData = async () => {
 
         div.appendChild(nameElement)
 
-        container.appendChild(div)
-
         const userEmail = document.createElement("p")
         userEmail.textContent = user.email
+        
         div.appendChild(userEmail)
+        
+        container.appendChild(div)
     })
+
+        
 
 }
 
 printData()
+
+// 5) método post
+const form = document.querySelector("#post-form")
+const titleInput = document.querySelector("title")
+const bodyInput = document.querySelector("#body")
+
+
+form.addEventListener("submit", (e) => {
+    
+    e.preventDefault()
+
+    postFetch.post("/posts", { //parte apagada por causa da base url
+        title: titleInput.value, 
+        body: bodyInput.value, 
+        userId: 1
+    })
+
+})
+
+// 6) global instance
+

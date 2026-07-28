@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Children, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
@@ -9,6 +9,9 @@ import ConditionalRender from '../components/ConditionalRender'
 import { ShowUserName } from '../components/ShowUserName'
 import CarDetails from '../components/CarDetails'
 import Fragment from '../components/Fragment'
+import Container from '../components/Container'
+import Message from '../components/Message'
+import { useState } from 'react'
 
 
 // 2) imagem em assets
@@ -22,9 +25,24 @@ const cars = [
   {id: 3, brand: "Renault", color: "Azul", km: 3200}
 ]
 
+// 14) função em prop
+import ExecuteFunction from '../components/ExecuteFunction'
+import ChangeMessage from '../components/ChangeMessage'
+
 function App() {
   const [count, setCount] = useState(0)
 
+  // 14) função em prop
+  function showMessage() {
+    console.log("Evento do componente pai")
+  }
+
+  // 15) state lift
+  const [message, setMessage] = useState("")
+
+  const handleMessage = (msg) => setMessage(msg)
+
+  
   return (
       <div className='App' style={{paddingBottom: "500px"}}>
         <h1>Avançando em React</h1>
@@ -66,6 +84,25 @@ function App() {
 
         {/* 12) fragment */}
         <Fragment/>
+
+        {/* 13) children */}
+        <Container>
+          <p>Alguma coisa</p>
+        </Container>
+
+        <Container>
+          <div>
+            <h2>Teste</h2>
+            <p>Meu container</p>
+          </div>
+        </Container>
+
+        {/* 14) função em prop */}
+        <ExecuteFunction myFunction={showMessage}/>
+
+        {/* 15) state lift */}
+        <Message msg={message}/>
+        <ChangeMessage handleMessage={handleMessage}/>
       </div>
   )
 }

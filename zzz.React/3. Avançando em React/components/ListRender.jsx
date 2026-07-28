@@ -9,6 +9,12 @@ const ListRender = () => {
         {id: 3, name: "João", age: 31}
     ])
 
+    const deleteRandom = () => {
+        const randomNumber = Math.floor(Math.random() * 4)
+
+        setUsers((prevUsers) => prevUsers.filter((user) => randomNumber !== user.id))
+    }
+
   return (
     <div>
         {/* 4) render sem key */}
@@ -18,7 +24,7 @@ const ListRender = () => {
             ))} 
             {/* não usar colchetes, e sim chaves */}
         </ul>
-        {/* 5) render com key (mellhor) */}
+        {/* 5) render com key (melhor) */}
         <ul>
             {users.map((user) => (
                 <li key={user.id}>
@@ -26,6 +32,9 @@ const ListRender = () => {
                 </li>
             ))}
         </ul>
+
+        {/* 6) previous state */}
+        <button onClick={deleteRandom}>Delete random user</button>
     </div>
   )
 }

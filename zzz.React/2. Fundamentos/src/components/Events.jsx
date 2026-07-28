@@ -16,6 +16,10 @@ const Events = () => {
         }
     }
 
+    // é usado aqui um early return para depois fazer o return principal
+    // ex: return 10 > 2 && <p>Carregando...</p>
+    // assim que 10 > 2 fosse falso (exemplo, se fosse uma api), iria pro return principal
+
   return (
     <div>
         <div>

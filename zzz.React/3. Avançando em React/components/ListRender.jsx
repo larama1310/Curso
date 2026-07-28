@@ -22,7 +22,7 @@ const ListRender = () => {
             {list.map((item, i) => (
                 <li key={i}>{item}</li>
             ))} 
-            {/* não usar colchetes, e sim chaves */}
+            {/* não usar chaves, e sim parênteses */}
         </ul>
         {/* 5) render com key (melhor) */}
         <ul>
